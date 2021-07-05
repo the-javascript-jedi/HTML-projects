@@ -1,0 +1,546 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation Sandbox</title>
+    <link rel="stylesheet" href="css/icons/foundation-icons.css">
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+    <style>
+      .spacer{height:500px;}
+    </style>
+  </head>
+  <body>
+    <!-- TOP BAR -->
+    <div class="top-bar">
+		  <div class="top-bar-left">
+		    <ul class="dropdown menu" data-dropdown-menu>
+		      <li class="menu-text">Site Title</li>
+		      <li>
+		        <a href="#">One</a>
+		        <ul class="menu vertical">
+		          <li><a href="#">One</a></li>
+		          <li><a href="#">Two</a></li>
+		          <li><a href="#">Three</a></li>
+		        </ul>
+		      </li>
+		      <li><a href="#">Two</a></li>
+		      <li><a href="#">Three</a></li>
+		    </ul>
+		  </div>
+		  <div class="top-bar-right">
+		    <ul class="menu">
+		      <li><input type="search" placeholder="Search"></li>
+		      <li><button type="button" class="button">Search</button></li>
+		    </ul>
+		  </div>
+		</div>
+
+    <!-- TYPOGRAPHY -->
+    <div class="row">
+      <!-- HEADING -->
+      <h1>Heading <small>Secondary Text</small></h1>
+      <h2 class="subheader">Heading <small>Secondary Text</small></h2>
+      <!-- PARAGRAPHS -->
+      <p class="lead"><strong>Lorem ipsum dolor</strong> sit amet, consectetur adipisicing elit, sed do
+        eiusmod <em>tempor incididunt </em>ut labore et dolore magna aliqua. Ut
+        enim <a href="#">ad minim veniam</a>, quis nostrud exercitation ullamco laboris</p>
+
+      <p><strong>Lorem ipsum dolor</strong> sit amet, consectetur adipisicing elit, sed do
+        eiusmod <em>tempor incididunt </em>ut labore et dolore magna aliqua. Ut
+        enim <a href="#">ad minim veniam</a>, quis nostrud exercitation ullamco laboris</p>
+
+      <p>Server Up-Time</p>
+      <div class="stat">230</div>
+
+      <hr>
+
+      <!-- ALIGNMENT CLASSES -->
+      <p class="text-left">Left aligned text.</p>
+	    <p class="text-center">Center aligned text.</p>
+	    <p class="text-right">Right aligned text.</p>
+	    <p class="text-justify">Justified text.</p>
+
+      <!-- FLOATS -->
+      <div class="callout clearfix">
+        <a class="button float-left">Left</a>
+        <a class="button float-right">Right</a>
+      </div>
+
+      <hr>
+
+      <!-- CODE -->
+      <code>&lt;div class="myClass"&gt;Hello World&lt;/div&gt;</code>
+			<p>Press <kbd>Cmd+r</kbd> (or <kbd>Ctrl+r</kbd> on Windows)<p>
+
+      <hr>
+
+      <!-- BLOCKQUOTE -->
+      <blockquote>
+        This is a blockquote from foundation
+        <cite>John Doe</cite>
+      </blockquote>
+
+      <!--LIST -->
+      <ul class="no-bullet">
+			  <li>Item One</li>
+			  <li>Item Two</li>
+			  <li>Item Three
+			    <ul class="no-bullet">
+			      <li>Nested Item</li>
+			      <li>Nested Item</li>
+			      <li>Nested Item</li>
+			    </ul>
+			  </li>
+			  <li>Item Four</li>
+			</ul>
+
+			<ol>
+			  <li>Item One</li>
+			  <li>Item Two</li>
+			  <li>Item Three
+			    <ul>
+			      <li>Nested Item</li>
+			      <li>Nested Item</li>
+			      <li>Nested Item</li>
+			    </ul>
+			  </li>
+			  <li>Item Four</li>
+			</ol>
+
+      <!-- VISIBILITY -->
+      <p class="hide">Hidden</p>
+			<p class="invisible">Invisible</p>
+			<p>You are on a small screen or larger.</p>
+			<p class="show-for-medium">You are on a medium screen or larger.</p>
+			<p class="show-for-large">You are on a large screen or larger.</p>
+			<p class="hide-for-small-only">You are not on a small screen.</p>
+			<p class"hide-for-medium-only">You are not on a medium screen.</p>
+			<p class="hide-for-large-only">You are not on a large screen.</p>
+			<p class="show-for-landscape">You are in landscape</p>
+			<p class="show-for-portrait">You are in portrait</p>
+    </div>
+
+    <hr>
+
+    <div class="row">
+      <!--BUTTONS -->
+      <button class="button">Button</button>
+      <a href="#" class="button">Link</a>
+      <input type="button" value="Input" class="button">
+      <br>
+
+      <!-- COLORED BUTTONS -->
+      <button class="success button">Button</button>
+      <button class="alert button">Button</button>
+      <button class="warning button">Button</button>
+      <button class="secondary button">Button</button>
+      <button class="button disabled">Button</button>
+
+      <br>
+      <!-- SIZES -->
+      <button class="button tiny">Button</button>
+      <button class="button small">Button</button>
+      <button class="button">Button</button>
+      <button class="button large">Button</button>
+      <button class="button expanded">Button</button>
+      <button class="button expanded large">Button</button>
+
+      <br>
+      <!-- HOLLOW -->
+      <button class="success button hollow">Button</button>
+      <button class="alert button hollow">Button</button>
+      <button class="warning button hollow">Button</button>
+      <button class="secondary button hollow">Button</button>
+    </div>
+
+    <div class="row">
+      <!-- FORMS -->
+      <form>
+        <div>
+          <label>Name</label>
+          <input type="text" placeholder="Name">
+        </div>
+
+        <div>
+          <label>Email</label>
+          <input type="email" placeholder="Email">
+        </div>
+
+        <div>
+          <label>Number</label>
+          <input type="number">
+        </div>
+
+        <div>
+          <label>Message</label>
+          <textarea placeholder="Message"></textarea>
+        </div>
+
+        <div>
+          <label>Gender</label>
+          <select>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+          </select>
+        </div>
+
+        <div>
+          <label>Gender</label>
+          <select multiple>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+          </select>
+        </div>
+
+        <fieldset class="fieldset">
+          <legend>A Fieldset</legend>
+          <input type="checkbox"><label>Checkbox</label>
+          <input type="checkbox"><label>Checkbox</label>
+          <input type="checkbox"><label>Checkbox</label>
+        </fieldset>
+        <label for="fileUpload" class="button">Upload File</label>
+        <input type="file" id="fileUpload" class="show-for-sr">
+
+        <label>Password</label>
+        <input type="password">
+        <p class="help-text">Your password must be 8 chars or more</p>
+
+        <!-- INPUT GROUP -->
+        <div class="input-group">
+          <span class="input-group-label">@</span>
+          <input class="input-group-field" type="email">
+          <div class="input-group-button">
+            <input type="submit" class="button" value="Submit">
+          </div>
+        </div>
+
+        <!-- SWITCH -->
+        <div class="switch">
+          <input class="switch-input" id="mySwitch" type="checkbox" name="exampleSwitch">
+          <label class="switch-paddle" for="mySwitch">
+            <span class="show-for-sr">Enabled</span>
+          </label>
+        </div>
+
+        <!-- SLIDER -->
+        <div class="slider" data-slider data-initial-start='0' data-end='20'>
+				  <span class="slider-handle"  data-slider-handle role="slider" tabindex="1"></span>
+				  <span class="slider-fill" data-slider-fill></span>
+				  <input type="hidden">
+				</div>
+      </form>
+    </div>
+
+    <div class="row">
+      <!-- TABLES -->
+      <table class="striped hover stack table-scroll">
+	        <tr>
+	          <th>Firstname</th>
+	          <th>Lastname</th>
+	          <th>Age</th>
+	        </tr>
+	        <tr>
+	          <td>Jill</td>
+	          <td>Smith</td>
+	          <td>50</td>
+	        </tr>
+	        <tr>
+	          <td>Eve</td>
+	          <td>Jackson</td>
+	          <td>24</td>
+	        </tr>
+	        <tr>
+	          <td>John</td>
+	          <td>Doe</td>
+	          <td>34</td>
+	        </tr>
+	        <tr>
+	          <td>Stephanie</td>
+	          <td>Landon</td>
+	          <td>47</td>
+	        </tr>
+	        <tr>
+	          <td>Mike</td>
+	          <td>Johnson</td>
+	          <td>19</td>
+	        </tr>
+	      </table>
+    </div>
+
+    <div class="row">
+      <!-- MENU -->
+      <ul class="menu">
+        <li class="menu-text">Site Title</li>
+        <li><a href="#">Link 1</a></li>
+        <li class="active"><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+        <li><a href="#">Link 4</a></li>
+      </ul>
+
+      <ul class="menu vertical">
+        <li><a href="#">Link 1</a></li>
+        <li class="active"><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+        <li><a href="#">Link 4</a></li>
+      </ul>
+
+      <ul class="menu simple">
+        <li><a href="#">Link 1</a></li>
+        <li class="active"><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+        <li><a href="#">Link 4</a></li>
+      </ul>
+
+      <ul class="menu">
+          <li><a href="#"><i class="fi-list"></i> <span>One</span></a></li>
+          <li><a href="#"><i class="fi-list"></i> <span>Two</span></a></li>
+          <li><a href="#"><i class="fi-list"></i> <span>Three</span></a></li>
+          <li><a href="#"><i class="fi-list"></i> <span>Four</span></a></li>
+      </ul>
+    </div>
+
+    <hr>
+
+    <div class="row">
+      <!-- CALLOUTS -->
+      <div class="callout">
+        <p>This is an example of a callout</p>
+      </div>
+      <div class="callout secondary">
+        <p>This is an example of a callout</p>
+      </div>
+      <div class="callout success">
+        <p>This is an example of a callout</p>
+      </div>
+      <div class="callout warning">
+        <p>This is an example of a callout</p>
+      </div>
+      <div class="callout alert">
+        <p>This is an example of a callout</p>
+      </div>
+
+      <hr>
+      <!-- PROGRESS BARS -->
+      <div class="success progress" role="progressbar">
+        <div class="progress-meter" style="width: 25%">
+          <p class="progress-meter-text">25%</p>
+        </div>
+      </div>
+
+      <div class="alert progress" role="progressbar">
+        <div class="progress-meter" style="width: 98%">
+          <p class="progress-meter-text">98%</p>
+        </div>
+      </div>
+
+      <div class="warning progress" role="progressbar">
+        <div class="progress-meter" style="width: 75%">
+          <p class="progress-meter-text">75%</p>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- LABELS -->
+			<span class="secondary label">Secondary Label</span>
+			<span class="success label">Success Label</span>
+			<span class="alert label">Alert Label</span>
+			<span class="warning label">Warning Label</span>
+
+      <hr>
+
+      <!-- BADGES -->
+			<span class="secondary badge">2</span>
+			<span class="success badge">3</span>
+			<span class="alert badge">A</span>
+			<span class="warning badge">B</span>
+
+      <hr>
+
+      <!-- BREADCRUMBS -->
+      <nav role="navigation">
+        <ul class="breadcrumbs">
+          <li><a href="#">Home</a></li>
+          <li class="disabled">Disabled</li>
+          <li><a href="#">Posts</a></li>
+          <li>My Post</li>
+        </ul>
+      </nav>
+
+      <hr>
+
+      <!-- PAGINATION -->
+      <ul class="pagination" role="navigation">
+        <li class="disabled">Previous</li>
+        <li class="current">1</li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li class="ellipsis"></li>
+        <li><a href="#">13</a></li>
+        <li><a href="#">14</a></li>
+        <li><a href="#">Next</a></li>
+      </ul>
+    </div>
+
+    <!-- GRID -->
+    <div class="row">
+      <div class="columns large-8 small-8 medium-6">
+        <h3>Main Column</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <div class="columns large-4 small-4 medium-6">
+        <h3>Sidebar</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+      </div>
+    </div>
+
+    <div class="row">
+	        <div class="columns large-3 medium-3">
+	          <h3>Box</h3>
+	          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	          tempor incididunt ut labore et dolore magna aliqua.</p>
+	        </div>
+	        <div class="columns large-3 medium-3">
+	          <h3>Box</h3>
+	          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	          tempor incididunt ut labore et dolore magna aliqua.</p>
+	        </div>
+	        <div class="columns large-3 medium-3">
+	          <h3>Box</h3>
+	          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	          tempor incididunt ut labore et dolore magna aliqua.</p>
+	        </div>
+	        <div class="columns large-3 medium-3">
+	          <h3>Box</h3>
+	          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	          tempor incididunt ut labore et dolore magna aliqua.</p>
+	        </div>
+      </div>
+
+      <div class="row">
+	        <div class="columns large-1 medium-1">
+	          <h3>Box</h3>
+	        </div>
+	        <div class="columns large-1 medium-1">
+	          <h3>Box</h3>
+	        </div>
+	        <div class="columns large-1 medium-1">
+	          <h3>Box</h3>
+	        </div>
+	        <div class="columns large-1 medium-1">
+	          <h3>Box</h3>
+	        </div>
+	        <div class="columns large-1 medium-1">
+	          <h3>Box</h3>
+	        </div>
+	        <div class="columns large-1 medium-1">
+	          <h3>Box</h3>
+	        </div>
+	        <div class="columns large-1 medium-1">
+	          <h3>Box</h3>
+	        </div>
+	        <div class="columns large-1 medium-1">
+	          <h3>Box</h3>
+	        </div>
+	        <div class="columns large-1 medium-1">
+	          <h3>Box</h3>
+	        </div>
+	        <div class="columns large-1 medium-1">
+	          <h3>Box</h3>
+	        </div>
+	        <div class="columns large-1 medium-1">
+	          <h3>Box</h3>
+	        </div>
+	        <div class="columns large-1 medium-1">
+	          <h3>Box</h3>
+	        </div>
+      </div>
+
+      <div class="row">
+        <div class="columns large-12 large-offset-6">
+          <h3>Box</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- CARD -->
+        <div class="card" style="width: 300px;">
+          <div class="card-divider">
+            This is a header
+          </div>
+          <img src="http://foundation.zurb.com/sites/docs/assets/img/generic/rectangle-1.jpg">
+          <div class="card-section">
+            <h4>This is a card.</h4>
+            <p>It has an easy to override visual style, and is appropriately subdued.</p>
+          </div>
+        </div>
+
+        <!-- MEDIA OBJECT -->
+        <div class="media-object">
+          <div class="media-object-section">
+            <div class="thumbnail">
+              <img src="http://foundation.zurb.com/sites/docs/assets/img/media-object/avatar-1.jpg">
+            </div>
+          </div>
+          <div class="media-object-section">
+            <h4>Dreams feel real while we're in them.</h4>
+            <p>I'm going to improvise. Listen, there's something you should know about me... about inception. An idea is like a virus, resilient, highly contagious. The smallest seed of an idea can grow. It can grow to define or destroy you.</p>
+          </div>
+        </div>
+
+        <!-- ACCORDION -->
+        <ul class="accordion" data-accordion>
+          <li class="accordion-item is-active" data-accordion-item>
+            <a href="#" class="accordion-title">Accordion 1</a>
+            <div class="accordion-content" data-tab-content>
+              I would start in the open state, due to using the `is-active` state class.
+            </div>
+          </li>
+          <li class="accordion-item" data-accordion-item>
+            <a href="#" class="accordion-title">Accordion 1</a>
+            <div class="accordion-content" data-tab-content>
+              I would start in the open state, due to using the `is-active` state class.
+            </div>
+          </li>
+          <li class="accordion-item" data-accordion-item>
+            <a href="#" class="accordion-title">Accordion 1</a>
+            <div class="accordion-content" data-tab-content>
+              I would start in the open state, due to using the `is-active` state class.
+            </div>
+          </li>
+        </ul>
+
+        <!-- TABS -->
+        <ul class="tabs" data-tabs id="example-tabs">
+          <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Tab 1</a></li>
+          <li class="tabs-title"><a href="#panel2">Tab 2</a></li>
+        </ul>
+
+        <div class="tabs-content" data-tabs-content="example-tabs">
+          <div class="tabs-panel is-active" id="panel1">
+            <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p>
+          </div>
+          <div class="tabs-panel" id="panel2">
+            <p>Suspendisse dictum feugiat nisl ut dapibus.  Vivamus hendrerit arcu sed erat molestie vehicula. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.  Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
+          </div>
+        </div>
+
+      </div>
+
+
+    <div class="spacer"></div>
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
