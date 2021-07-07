@@ -1,0 +1,35 @@
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: $color-grey-dark;
+  padding: 30px;
+}
+
+.heading-primary {
+  color: $color-white;
+  text-transform: uppercase;
+  /* animation issue fix for the text going up */
+  backface-visibility: hidden;
+  margin-bottom: 60px;
+  //&--main => .heading-primary--main
+  &--main {
+    display: block;
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 35px;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+  }
+  //&--sub => .heading-primary--sub
+  &--sub {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 18px;
+    /* shorthand for all animation */
+    animation: moveInRight 1s ease-out;
+  }
+}
