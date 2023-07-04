@@ -1,0 +1,18 @@
+.responsive-table{
+    max-height: 300px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.thead-style{
+    position: sticky;
+    top: 0px;
+    background-color: #fff;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    width: 100%;
+}
