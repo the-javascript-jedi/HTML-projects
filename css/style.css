@@ -14,3 +14,42 @@ body {
   background: var(--mainWhite);
   color: var(--mainBlack);
 }
+
+/* Navlinks */
+.navbar-toggler{
+  outline: none !important;
+}
+
+.toggler-icon{
+  font-size: 2.5rem;
+  color:var(--mainPink);
+}
+
+.nav-link{
+  color:var(--mainPink);
+  /* hower transition effect */
+  transition: all 1s ease-in-out;
+  font-size: 1.5rem;
+}
+
+.nav-link:hover{
+  color: var(--mainBlack);
+}
+/* cart styles */
+.cart-info__icon{
+  color: var(--mainBlack);
+  cursor: pointer;
+}
+.cart-info{
+  border: 0.1rem solid var(--mainBlack);
+  color: var(--mainBlack);
+  border-radius:0.25rem;
+  padding:0.4rem 0.6rem;
+  cursor: pointer;
+}
+
+.cart-info:hover{
+  background: var(--mainPink);
+  border-color: var(--mainPink);
+  color: var(--mainWhite);
+}
