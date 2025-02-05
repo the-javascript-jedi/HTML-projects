@@ -1,0 +1,62 @@
+.btn {
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    /* transition all transform properties */
+    /* transition must be kept on initial state when we modify pseudo classes*/
+    transition: all 0.2s;
+    position: relative;
+  }
+  &:hover {
+    transform: translateY(-3px);
+    /* on hover show a box shadow */
+    box-shadow: 0 10px 20px rgba($color-black, 0.2);
+
+    /* obn hover of button we apply a scale transform to the :after */
+    // .btn:hover::after
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+  /* click state */
+  &:active {
+    transform: translateY(-1px);
+    /* on click reduce the box shadow */
+    box-shadow: 0 5px 10px rgba($color-black, 0.2);
+  }
+  &--white {
+    background-color: $color-white;
+    color: $color-grey-dark;
+    &::after {
+      background-color: $color-white;
+    }
+  }
+
+  /* after - behind button */
+  /* after will be treated like a child element so we provide width as well*/
+  &::after {
+    /* for after - we need to specify content and display property */
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+  }
+
+  &--animated {
+    /*shorthand - animation name,duration,timingfunction,animation delay  */
+    animation: moveInBottom 0.5s ease-out 0.75s;
+    /* automatically apply the styles from 0% before animation starts */
+    animation-fill-mode: backwards;
+  }
+}
