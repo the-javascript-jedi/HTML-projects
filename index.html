@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- main css -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- font awesome -->
+  <link rel="stylesheet" href="css/all.css">
+  <title>Grandma's Project</title>
+  <style>
+  </style>
+</head>
+
+<body>
+
+  <!-- icons -->
+  <!-- 
+    https://www.iconfinder.com/icons/2427887/dessert_donut_doughnut_fat_sweets_icon
+    Creative Commons (Attribution 3.0 Unported);
+    https://www.iconfinder.com/korawan_m
+         -->
+  <!-- 
+    https://www.iconfinder.com/icons/2427860/baguette_bread_bread_loaf_food_toast_icon
+    Creative Commons (Attribution 3.0 Unported);
+    https://www.iconfinder.com/korawan_m
+         -->
+  <!-- 
+    https://www.iconfinder.com/icons/2427875/cup_cupcake_dessertice_cream_yogurt_icon
+    Creative Commons (Attribution 3.0 Unported);
+    https://www.iconfinder.com/korawan_m
+         -->
+  <!-- 
+    https://www.iconfinder.com/icons/2671457/candy_sweets_treat_trick_icon
+    Creative Commons (Attribution 3.0 Unported);
+    https://www.iconfinder.com/bluelabelicons
+         -->
+  <!--end of icons icons -->
+
+<header id="header">
+  <!-- navbar-expand-lg - expand navbar only on large screen  -->
+  <nav class="navbar navbar-expand-lg px-4">
+
+  <a href="#" class="navbar-brand">
+    <img src="img/logo.svg" alt="main icon">
+  </a>
+  <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myNavbar">
+    <span class="toggler-icon">
+      <i class="fas fa-bars"></i>
+    </span>
+  </button>
+  <div class="collapse navbar-collapse" id="myNavbar">
+    <ul class="navbar-nav text-capitalize mx-auto">
+      <li class="nav-item active">
+        <a href="#header" class="nav-link">home</a>
+      </li>
+      <li class="nav-item active">
+        <a href="#about" class="nav-link">about</a>
+      </li>
+      <li class="nav-item active">
+        <a href="#services" class="nav-link">services</a>
+      </li>
+      <li class="nav-item active">
+        <a href="#cakes" class="nav-link">cakes</a>
+      </li>
+      <!-- d-lg-flex -display flex on large screens -->
+      <div class="nav-info-items d-none d-lg-flex">
+        <div class="nav-info align-items-center d-flex justify-content-between mx-lg-5">
+          <span class="info-icon mx-lg-3">
+            <i class="fas fa-phone"></i>
+          </span>
+          <p class="mb-0">+123 456 789</p>
+        </div>
+      </div>
+      <!-- single info -->
+       <div id="cart-info" class="nav-info align-items-center cart-info d-flex justify-content-between mx-lg-5">
+          <span class="cart-info__icon mr-lg-3">
+          <i class="fas fa-shopping-cart"></i>
+          </span>
+          <p class="mb-0 text-capitalize">
+            <span id="item-count">2</span>
+            items - $
+            <span class="item-total">
+              10.49
+            </span>
+          </p>
+       </div>
+    </ul>
+  </div>
+  </nav>
+  <!-- end of nav -->
+   <!-- banner -->
+      <!-- banner -->
+      <div class="container-fluid">
+        <div class="row max-height justify-content-center align-items-center">
+          <div class="col-10 mx-auto banner text-center">
+            <h1 class="text-capitalize">
+              welcome to <strong class="banner-title">grandma's</strong>
+            </h1>
+            <a href="#store" class="btn banner-link text-uppercase my-2">explore</a>
+          </div>
+          <!-- store -->
+        </div>
+      </div>
+</header>
+  <!-- about -->
+  <section class="about py-5" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-10 mx-auto col-md-6 my-5">
+          <h1 class="text-capitalize">about <strong class="banner-title">us</strong></h1>
+          <p class="my-4 text-muted w-75">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate beatae est hic iusto cupiditate modi!
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, facere.
+          </p>
+          <a href="#" class="btn btn-black text-uppercase">explore</a>
+        </div>
+        <div class="col-10 mx-auto col-md-6 my-5 align-self-center">
+          <div class="about-img__container">
+            <img src="img/sweets-1.jpeg" class="img-fluid" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- jquery -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- script js -->
+  <script src="js/app.js"></script>
+</body>
+</html>
