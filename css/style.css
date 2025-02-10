@@ -139,3 +139,52 @@ body {
   background:var(--mainPink);
   color:var(--mainBlack);
 }
+.single-item {
+  -webkit-transition: all 0.3 linear;
+  transition: all 0.3 linear;
+}
+
+.single-item:hover {
+  -webkit-box-shadow: 0 10px 15px rgb(0, 0, 0);
+  box-shadow: 0 10px 15px rgb(0, 0, 0);
+}
+
+.img-container {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.store-img {
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.img-container:hover .store-img {
+  -webkit-transform: scale(1.2);
+  /* transform: scale(1.2); */
+}
+
+.store-item-icon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 12px;
+  padding: 0.75rem;
+  background: rgb(249, 228, 148);
+  border-top-left-radius: 16px;
+  border-top-left-radius: 1rem;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  /* -webkit-transform: translate(100%, 100%); */
+  transform: translate(100%, 100%);
+}
+
+.img-container:hover .store-item-icon {
+  /* -webkit-transform: translate(0, 0); */
+  transform: translate(0, 0);
+}
+
+.store-item-icon:hover {
+  color: #fff;
+}
