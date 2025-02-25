@@ -1,0 +1,40 @@
+/* Add these CSS rules to your existing styles */
+
+/* Store items container */
+.store-items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Modified store item styles */
+.store-item.sweets {
+    flex: 0 0 calc(33.333% - 2rem);
+    /* For 3 items */
+    margin: 1rem;
+}
+
+/* When only 2 items are present */
+.store-item.sweets:first-child:nth-last-child(2),
+.store-item.sweets:first-child:nth-last-child(2)~.store-item.sweets {
+    flex: 0 0 calc(50% - 2rem);
+    margin: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+
+    .store-item.sweets,
+    .store-item.sweets:first-child:nth-last-child(2),
+    .store-item.sweets:first-child:nth-last-child(2)~.store-item.sweets {
+        flex: 0 0 calc(50% - 2rem);
+    }
+}
+
+@media (max-width: 575.98px) {
+
+    .store-item.sweets,
+    .store-item.sweets:first-child:nth-last-child(2),
+    .store-item.sweets:first-child:nth-last-child(2)~.store-item.sweets {
+        flex: 0 0 calc(100% - 2rem);
+    }
+}

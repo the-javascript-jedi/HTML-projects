@@ -188,3 +188,26 @@ body {
 .store-item-icon:hover {
   color: #fff;
 }
+
+/* services */
+.services {
+  color: #fff;
+  background: -webkit-gradient(linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.6)),
+      to(rgba(0, 0, 0, 0.6))),
+    url("../img/servicesBcg.jpeg") center/cover fixed no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../img/servicesBcg.jpeg") center/cover fixed no-repeat;
+}
+
+.service-title {
+  letter-spacing: 8px;
+  letter-spacing: 0.5rem;
+}
+
+.service-text {
+  word-spacing: 8px;
+  word-spacing: 0.5rem;
+}
