@@ -211,3 +211,24 @@ body {
   word-spacing: 8px;
   word-spacing: 0.5rem;
 }
+
+/* footer*/
+.footer-title {
+  background: #000;
+}
+
+.footer-contact {
+  background: rgb(238, 238, 238);
+}
+
+.footer-icon {
+  font-size: 24px;
+  font-size: 1.5rem;
+  color: #fff;
+  -webkit-transition: all 0.4 ease-in-out;
+  transition: all 0.4 ease-in-out;
+}
+
+.footer-icon:hover {
+  color: #ef7998;
+}
