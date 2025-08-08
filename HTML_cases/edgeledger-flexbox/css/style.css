@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+*{
+    /*box-sizing: border-box;-padding must not take the width, reset padding and margin */
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    background: #fff;
+    color:#333;
+    line-height: 1.6;
+}
+ul{
+    list-style: none;
+}
+a{
+    color:#333;
+    text-decoration: none;
+}
+h1,h2{
+    font-weight:300;
+    line-height:1.2;
+}
+p{
+    margin:10px 0;
+}
+img{
+    width:100%;
+}
+
+/* Navbar */
+.navbar{
+    display:flex;
+    align-items: center;
+    /* justify-content: space-between;- we want logo to be on one side and links on the other side */
+    justify-content: space-between;
+    background-color:#333;
+    color:#fff;
+    opacity:0.8;
+    width:100%;
+    height:70px;
+    position: fixed;
+    top:0px;
+    padding:0 30px;
+    transition:0.5s;
+}
+.navbar.top{
+    background:transparent;
+}
+.navbar a{
+    color:#fff;
+    padding:10px 20px;
+    margin:0 5px;
+}
+/* hover effect onn link tags */
+.navbar a:hover{
+    border-bottom: #28a745 2px solid;
+}
+.navbar ul{
+    display:flex;
+}
+.navbar .logo{
+    font-weight:400;
+}
+
+/* Header */
+.hero{
+    background: url('../images/home/showcase.jpg') no-repeat center center/cover;
+    height:100vh;
+    position:relative;
+    color:#fff;
+}
+.hero .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* height of content is set to height of parent container so the content is aligned to center axis*/
+    height:100%;
+    padding:0 20px;
+}
+
+.hero .content h1{
+    font-size:55px;
+}
+.hero .content p{
+    font-size:23px;
+    /* max-width so para does not extend to far out */
+    max-width:600px;
+    margin:20px 0 30px;
+}
+/* Pseudo selectors - allows us to insert content before or after this element*/
+/* Overlay for hero element */
+.hero::before{
+    /* for Pseudo selector we always need to use the content attribute */
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.6);
+}
+/* anything inside hero will have z-index:10 */
+.hero *{
+    /* the higher the z index closer the element is to the screen, lower the z-index the further back it is */
+    z-index: 10;
+}
+.hero.blog{
+    background:url('../images/home/blog.jpg') no-repeat center center/cover;
+    height:30vh;
+}
+.blog .content h1 {
+    font-size: 30px;
+    margin-top: 30px;
+}
+/* Icons */
+.icons{
+    padding:30px;    
+}
+.icons h3{
+    font-weight:bold;
+    margin-bottom:15px;
+}
+.icons i{
+    background-color: #28a745;
+    color:#fff;
+    padding:1rem;
+    border-radius:50%;
+    margin-bottom:15px;
+}
+.cases img:hover{
+    opacity:0.7;
+}
+
+/* team */
+.team img{
+    border-radius: 50%;
+}
+/* callback form */
+.callback-form{
+    width:100%;
+    padding:20px 0;
+}
+
+.callback-form label{
+    display:block;
+    margin-bottom:5px;
+}
+
+.callback-form .form-control{
+margin-bottom: 15px;
+}
+
+.callback-form input{
+    width:100%;
+    padding:4px;
+    height:40px;
+    border:#f5f5f5 1px solid;
+}
+/* change focus state of input box */
+.callback-form input:focus{
+    outline-color: #28a745 ;
+}
+
+.callback-form .btn{
+    padding:12px 0;
+    margin-top:20px;
+}
+/* Post */
+.post{
+    padding:50px 30px;
+}
+.post h2{
+    font-size: 40px;
+    margin-bottom:20px;
+    padding-bottom:10px;
+    border-bottom: #ccc solid 1px;
+}
+.post .meta{
+   margin-bottom: 30px;
+}
+.post img{
+    width:300px;
+    border-radius:50%;
+    display:block;
+    margin:0 auto 30px;
+}
+/* Footer */
+.footer{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height:200px;
+}
+.footer a{
+    color:#fff;
+}
+.footer a:hover{
+    color:#28a745;
+}
+/* anything within the .footer .social  */
+.footer .social > *{
+    margin-right:30px;
+}
+
+/* Media Queries */
+/* anytime screen is smaller than 768px */
+@media(max-width:768px){
+    .navbar{
+        flex-direction: column;
+        height:120px;
+        padding:20px;
+    }
+    .navbar a{
+        padding:10px 10px;
+        margin:0 3px;
+    }
+    .flex-items{
+        flex-direction:column;
+    }
+    .flex-columns .column,.flex-grid .column{
+        flex:100%;
+        max-width:100%;
+    }
+    .team img{
+        width:70%;
+    }
+}
