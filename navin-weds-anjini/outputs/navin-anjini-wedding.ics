@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Navin and Anjini//Wedding Invitation//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:navin-anjini-wedding-20260907@example.com
+DTSTAMP:20260715T000000Z
+DTSTART:20260907T103000Z
+SUMMARY:Navin & Anjini's Wedding
+LOCATION:CSI Ringel Taube Memorial District Church Venkaji
+DESCRIPTION:Wedding ceremony of Navin and Anjini.\nMonday, 7 September 2026 at 4:00 PM IST.
+END:VEVENT
+END:VCALENDAR
